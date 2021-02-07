@@ -19,7 +19,7 @@ async function getGames() {
             resultContainer.innerHTML += `<div class="game"><b>Name:</b> ${facts[i].name} 
                                                             <b>Rating:</b>  ${facts[i].rating} 
                                                             <b>Tags:</b> ${facts[i].tags.length}</div>`
-    }
+        }
     } catch (error) {
         console.log("An error occurred");
         resultContainer.innerHTML = displayError("Failed to load games");
